@@ -1,0 +1,67 @@
+:root{
+    --color-scrollbar: #d3d3d4;
+    --color-background-scrollbar: #eee;
+}
+
+/*SCROLL CHROME*/
+.main__page::-webkit-scrollbar{ /*la barra que se desplaza*/
+    width: 25px;
+    background: transparent;
+}
+
+.main__page::-webkit-scrollbar-thumb{/*La barrita que se desplaza especificamente*/
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+.main__page:hover::-webkit-scrollbar-thumb{ /*Espacio por donde se desplaza la barra*/
+    box-shadow: inset 0 0 0 10px var(--color-scrollbar);
+}
+
+.main__page:hover::-webkit-scrollbar-thumb:hover{ /*Espacio por donde se desplaza la barra*/
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--clr-secondary);
+}
+
+.main__page::-webkit-scrollbar-track{
+    margin: 40px 0;
+}
+
+/*SCROLL CHROME LATERAL*/
+.layout__aside::-webkit-scrollbar{ /*la barra que se desplaza*/
+    width: 25px;
+    background: var(--clr-secondary);
+}
+
+.layout__aside::-webkit-scrollbar-thumb{/*La barrita que se desplaza especificamente*/
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+.layout__aside:hover::-webkit-scrollbar-thumb{ /*Espacio por donde se desplaza la barra*/
+    box-shadow: inset 0 0 0 10px var(--clr-principal);
+}
+
+.layout__aside:hover::-webkit-scrollbar-thumb:hover{ /*Espacio por donde se desplaza la barra*/
+    border: 8px solid transparent;
+}
+
+.layout__aside::-webkit-scrollbar-track{
+    background-color: transparent;
+    margin: 40px 0;
+}
+
+
+/*SCROLL MOZ*/
+.main__page{
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scrollbar) transparent;
+}
+
+/*SCROLL MOZ LATERAL*/
+.layout__aside{
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scrollbar) var(--clr-secondary);
+}
