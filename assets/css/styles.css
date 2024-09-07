@@ -151,7 +151,7 @@ h6 {
 }
 
 .page__name {
-  font-size: 5rem;
+  font-size: 7rem;
   margin-bottom: 1rem;
 }
 
@@ -336,4 +336,6 @@ h6 {
   opacity: 1;
 }
 
-
+.drawing{
+  border-radius: 1rem;
+}
